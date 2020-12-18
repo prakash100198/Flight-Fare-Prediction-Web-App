@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Flight Fare Predictor</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <!-- <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center cyan-text">Flight Fare Prediction Web-App</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the price of flight tickets
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+
+        <div class="input-field col s4">
+            <label for="first_name"><b>Source</b></label>
+            <br>
+          <input placeholder="Source City" name="Source" id="first_name" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Destination </b></label>
+            <br>
+          <input id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Date</b></label>
+            <br>
+          <input id="_name" name="Date" placeholder="Date(format- dd/mm/yyyy)" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="third_name"><b>Airline</b></label>
+            <br>
+          <input placeholder="Airline Preferred" name="Airline" id="third_name" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fourth_name"><b>Departure</b></label>
+            <br>
+          <input placeholder="Departure Time(format- hh:mm)" name="Departure" id="fourth_name" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for=fifth_name"><b>Stops</b></label>
+            <br>
+          <input placeholder="Stops(eg. 0 means NonStop)" name="Stops" id="fifth_name" type="text" class="validate">
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light cyan">Predict Flight Fare</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer cyan">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="white-text">“Computers are able to see, hear and learn.  Welcome to the future.” ~Dave Waters </h6>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h6 class="white-text">Source City Available</h6>
+          <ul>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Bangalore">Bangalore</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Chennai">Chennai</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Delhi">Delhi</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Mumbai">Mumbai</a></li>
+          </ul>
+
+        </div>
+        <div class="col l3 s12">
+          <h6 class="white-text">Destinaation City Available</h6>
+          <ul>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Bangalore">Bangalore</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Kochi">Cochin</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Delhi">Delhi</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Hyderabad">Hyderabad</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/New_Delhi">New Delhi</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col l3 s12">
+          <h6 class="white-text">Airlines Available</h6>
+          <ul>
+            <li><a class="white-text" href="https://www.goindigo.in/">IndiGo</a></li>
+            <li><a class="white-text" href="http://www.airindia.in/">Air India</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Jet_Airways">Jet Airways</a></li>
+            <li><a class="white-text" href="https://www.spicejet.com/">SpiceJet</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Interlining#:~:text=Interlining%2C%20also%20known%20as%20interline,multiple%20flights%20on%20multiple%20airlines.">Multiple carriers</a></li>
+            <li><a class="white-text" href="https://www.goair.in/">GoAir</a></li>
+            <li><a class="white-text" href="https://www.airvistara.com/in/en">Vistara</a></li>
+            <li><a class="white-text" href="https://www.airasia.com/en/gb">Air Asia</a></li>
+            <li><a class="white-text" href="https://www.airvistara.com/in/en/vistara-experience/on-board/cabin#:~:text=Premium%20Economy%20customers%20also%20enjoy,fares%20for%20travel%20within%20India&text=10kg%20Hand%20Baggage%20allowance%20for%20travel%20within%20a">Vistara Premium economy</a></li>
+            <li><a class="white-text" href="https://onemileatatime.com/jet-airways-a330-business-class/#:~:text=Jet%20Airways%20Business%20Class%20A330%20Seat&text=The%20cabin%20alternates%20between%20one,4%2D5%20seats%20per%20row.">Jet Airways Business</a></li>
+            <li><a class="white-text" href="https://en.wikipedia.org/wiki/Premium_economy">Multiple carriers Premium economy</a></li>
+            <li><a class="white-text" href="https://www.trujet.com/#/home">Trujet</a></li>
+          </ul>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <a class="cyan-text text-lighten-3">INDIA</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="C:\Users\Prakash\Documents\Python\udemy_data_sc_pyfiles\Machine Learning Practice\Flight Fare Project\New template\materializ\js\materialize.js"></script>
+  <script src="C:\Users\Prakash\Documents\Python\udemy_data_sc_pyfiles\Machine Learning Practice\Flight Fare Project\New template\materialize\js\init.js"></script> -->
+
+  </body>
+</html>
