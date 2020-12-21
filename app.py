@@ -32,8 +32,8 @@ def predict():
         c= pd.Series(airline_value)
         airline = c.map(airline_dict).values[0]   #<----------
 
-        day = int(date_value.split('-')[0])    #<----------------
-        month = int(date_value.split('-')[1])  #<---------
+        day = int(date_value.split(' ')[0].split('-')[0])    #<----------------
+        month = int(date_value.split(' ')[0].split('-')[1])  #<---------
 
         hour = int(date_value.split(' ')[1].split(':')[0])
         minute = int(date_value.split(' ')[1].split(':')[1])
