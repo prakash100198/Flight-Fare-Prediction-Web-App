@@ -53,12 +53,6 @@
              </datalist> 
                
 
-<!--             <select name="Source" id="Source" required="required">
-                <option value="Delhi">Delhi</option>
-                <option value="Kolkata">Kolkata</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Chennai">Chennai</option>
-            </select> -->
 
         </div>
 
@@ -66,14 +60,17 @@
 
           <label for="last_name"><b>Destination </b></label>
             <br>
-         <input id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate" required="required"> 
-<!--           <select name="Destination" id="Destination" required="required">
-                                <option value="Cochin">Cochin</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="New Delhi">New Delhi</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                <option value="Kolkata">Kolkata</option>
-                            </select> -->
+         <input list="dest_list" id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate" required="required"> 
+          <datalist id="dest_list">
+               <option value="Hyderabad"/>
+                <option value="Cochin"/>
+                <option value="Delhi"/>
+               <option value="New Delhi"/>
+               <option value="Bangalore"/>
+               <option value="Kolkata"/>
+              
+             </datalist> 
+
         </div>
 
         <div class="input-field col s4">
@@ -86,21 +83,23 @@
         <div class="input-field col s4">
             <label for="third_name"><b>Airline</b></label>
             <br>
-          <input placeholder="Airline Preferred" name="Airline" id="third_name" type="text" class="validate" required="required">
-<!--           <option value="Jet Airways">Jet Airways</option>
-          <option value="IndiGo">IndiGo</option>
-          <option value="Air India">Air India</option>
-          <option value="Multiple carriers">Multiple carriers</option>
-          <option value="SpiceJet">SpiceJet</option>
-          <option value="Vistara">Vistara</option>
-          <option value="Air Asia">Air Asia</option>
-          <option value="GoAir">GoAir</option>
-          <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
-          </option>
-          <option value="Jet Airways Business">Jet Airways Business</option>
-          <option value="Vistara Premium economy">Vistara Premium economy</option>
-          <option value="Trujet">Trujet</option>
-           -->
+          <input list="airline_list" placeholder="Airline Preferred" name="Airline" id="third_name" type="text" class="validate" required="required">
+          <datalist id="airline_list">
+            <option value="Jet Airways"/>
+            <option value="IndiGo"/>
+            <option value="Air India"/>
+            <option value="Multiple carriers"/>
+            <option value="SpiceJet"/>
+            <option value="Vistara"/>
+            <option value="Air Asia"/>
+            <option value="GoAir"/>
+            <option value="Multiple carriers Premium economy"/>
+            <option value="Jet Airways Business"/>
+            <option value="Vistara Premium economy"/>
+            <option value="Trujet"/>
+            
+            </datalist> 
+
         </div>
 
         <div class="input-field col s4">
@@ -112,7 +111,15 @@
         <div class="input-field col s4">
             <label for=fifth_name"><b>Stops</b></label>
             <br>
-          <input placeholder="eg. 0 means NonStop" name="Stops" id="fifth_name" type="text" class="validate" required="required">
+          <input list="stop_list" placeholder="eg. 0 means NonStop" name="Stops" id="fifth_name" type="text" class="validate" required="required">
+             <datalist id="stop_list">
+               <option value="0">Non-Stop</option>
+                <option value="1"/>
+                <option value="2"/>
+               <option value="3"/>
+               <option value="4"/>
+              
+             </datalist> 
 
         </div>
 
