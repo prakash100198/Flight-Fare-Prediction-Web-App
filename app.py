@@ -22,8 +22,8 @@ def predict():
         dest_value = features[1]
         date_value = features[2]
         airline_value = features[3]
-        dep_value = features[4]
-        stops_value = int(features[5])   #<----------
+        
+        stops_value = int(features[4])   #<----------
 
         a= pd.Series(source_value)
         source = a.map(source_dict).values[0]   #<----------
@@ -32,11 +32,11 @@ def predict():
         c= pd.Series(airline_value)
         airline = c.map(airline_dict).values[0]   #<----------
 
-        day = int(date_value.split('/')[0])    #<----------------
-        month = int(date_value.split('/')[1])  #<---------
+        day = int(date_value.split('-')[0])    #<----------------
+        month = int(date_value.split('-')[1])  #<---------
 
-        hour = int(dep_value.split(':')[0])
-        minute = int(dep_value.split(':')[1])
+        hour = int(date_value.split(' ')[1].split(':')[0])
+        minute = int(date_value.split(' ')[1].split(':')[1])
 
         pred_features = [np.array([day,month,stops_value,hour,minute,airline,source,destination])]
         prediction = model.predict(pred_features)
@@ -52,4 +52,4 @@ def predict():
     else:
         return render_template('index.html')
 if __name__=='__main__':
-    app.run()
+    app.run(debug=True)
