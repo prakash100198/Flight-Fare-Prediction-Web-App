@@ -45,7 +45,7 @@ def predict():
             output = round(prediction[0],0)
 
         else:
-            output = round(prediction[0],0)-4000
+            output = round(prediction[0],0)-2000
 
 
         return render_template('index.html',pred='The Flight Fare for the given date is:-INR {}'.format(output))
