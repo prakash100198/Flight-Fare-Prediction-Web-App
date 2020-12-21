@@ -43,7 +43,15 @@
            <div class="input-field col s4">
            <label for="Source"><b>Source</b></label>
             <br> 
-          <input placeholder="Source City" name="Source" id="Source" type="text" class="validate" required="required">
+          <input list="Source_list" placeholder="Source City" name="Source" id="Source" type="text" class="validate" required="required">
+             <datalist id="Source_list">
+               <option value="Delhi"/>
+                <option value="Kolkata"/>
+                <option value="Mumbai"/>
+               <option value="Chennai"/>
+               <option value="Bangalore"/>
+             </datalist> 
+               
 
 <!--             <select name="Source" id="Source" required="required">
                 <option value="Delhi">Delhi</option>
