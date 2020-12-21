@@ -39,20 +39,34 @@
               <div class="row">
     <form action='/predict' method="post" class="col s12">
       <div class="row">
-
-        <div class="card col s4">
-            <label for="Source"><b>Source</b></label>
-            <br>
+                
+              <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Source</h5>
+                            <select name="Source" id="Source" required="required">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </div>
+                    </div>
+                
+<!--          <div class="card col s4">
+           <label for="Source"><b>Source</b></label>
+            <br> -->
           <!-- <input placeholder="Source City" name="Source" id="first_name" type="text" class="validate" required="required"> -->
-          
-            <select name="Source" id="Source" required="required">
+
+<!--             <select name="Source" id="Source" required="required">
             <option value="Delhi">Delhi</option>
             <option value="Kolkata">Kolkata</option>
             <option value="Mumbai">Mumbai</option>
             <option value="Chennai">Chennai</option>
             </select>
-            
-        </div>
+
+        </div> -->
 
         <div class="card col s4">
 
