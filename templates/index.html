@@ -40,32 +40,32 @@
     <form action='/predict' method="post" class="col s12">
       <div class="row">
        
-           <div class="dropdown col s4">
+           <div class="input-field col s4">
            <label for="Source"><b>Source</b></label>
             <br> 
           <input placeholder="Source City" name="Source" id="Source" type="text" class="validate" required="required">
 
-            <select name="Source" id="Source" required="required">
+<!--             <select name="Source" id="Source" required="required">
                 <option value="Delhi">Delhi</option>
                 <option value="Kolkata">Kolkata</option>
                 <option value="Mumbai">Mumbai</option>
                 <option value="Chennai">Chennai</option>
-            </select>
+            </select> -->
 
         </div>
 
         <div class="input-field col s4">
 
-          <label for="Destination"><b>Destination </b></label>
+          <label for="last_name"><b>Destination </b></label>
             <br>
-          <!--<input id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate" required="required"> -->
-          <select name="Destination" id="Destination" required="required">
+         <input id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate" required="required"> 
+<!--           <select name="Destination" id="Destination" required="required">
                                 <option value="Cochin">Cochin</option>
                                 <option value="Delhi">Delhi</option>
                                 <option value="New Delhi">New Delhi</option>
                                 <option value="Hyderabad">Hyderabad</option>
                                 <option value="Kolkata">Kolkata</option>
-                            </select>
+                            </select> -->
         </div>
 
         <div class="input-field col s4">
@@ -79,7 +79,7 @@
             <label for="third_name"><b>Airline</b></label>
             <br>
           <input placeholder="Airline Preferred" name="Airline" id="third_name" type="text" class="validate" required="required">
-          <option value="Jet Airways">Jet Airways</option>
+<!--           <option value="Jet Airways">Jet Airways</option>
           <option value="IndiGo">IndiGo</option>
           <option value="Air India">Air India</option>
           <option value="Multiple carriers">Multiple carriers</option>
@@ -92,7 +92,7 @@
           <option value="Jet Airways Business">Jet Airways Business</option>
           <option value="Vistara Premium economy">Vistara Premium economy</option>
           <option value="Trujet">Trujet</option>
-          
+           -->
         </div>
 
         <div class="input-field col s4">
@@ -105,11 +105,7 @@
             <label for=fifth_name"><b>Stops</b></label>
             <br>
           <input placeholder="eg. 0 means NonStop" name="Stops" id="fifth_name" type="text" class="validate" required="required">
-          <option value="0">Non-Stop</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+
         </div>
 
       </div>
@@ -195,21 +191,10 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      <a class="cyan-text text-lighten-3">INDIA</a>
+      <a class="cyan-text text-lighten-3"><span>&#169;</span>2020 Prakash Kumar</a>
       </div>
     </div>
   </footer>
-
-  <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
   
   </body>
 </html>
