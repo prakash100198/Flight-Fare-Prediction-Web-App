@@ -49,6 +49,7 @@ def predict():
 
 
         return render_template('index.html',pred='The Flight Fare for the given date is:-INR {}'.format(output))
-    return render_template('index.html')
+    else:
+        return render_template('index.html')
 if __name__=='__main__':
     app.run()
