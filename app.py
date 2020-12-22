@@ -39,7 +39,7 @@ def predict():
         minute = int(pd.to_datetime(date_value, format ="%Y-%m-%dT%H:%M").minute)
            
         if  source==destination:
-            return render_template('index.html',pred='Source and Destination City can not be same. Please try again! ')
+            return render_template('index.html',pred='Source and Destination City cannot be same. Please try again! ')
             
         else:
             pred_features = [np.array([day,month,stops_value,hour,minute,airline,source,destination])]
