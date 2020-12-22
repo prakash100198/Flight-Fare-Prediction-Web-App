@@ -37,18 +37,22 @@ def predict():
 
         hour = int(pd.to_datetime(date_value, format ="%Y-%m-%dT%H:%M").hour)
         minute = int(pd.to_datetime(date_value, format ="%Y-%m-%dT%H:%M").minute)
-
-        pred_features = [np.array([day,month,stops_value,hour,minute,airline,source,destination])]
-        prediction = model.predict(pred_features)
-
-        if stops_value==0:
-            output = round(prediction[0],0)
-
+           
+        if  source==destination:
+            return render_template('index.html',pred='Source and Destination City can not be same. Please try again! ')
+            
         else:
-            output = round(prediction[0],0)-2000
+            pred_features = [np.array([day,month,stops_value,hour,minute,airline,source,destination])]
+            prediction = model.predict(pred_features)
+
+            if stops_value==0:
+                output = round(prediction[0],0)
+
+            else:
+                output = round(prediction[0],0)-2000
 
 
-        return render_template('index.html',pred='The Flight Fare for the given date is:-INR {}'.format(output))
+            return render_template('index.html',pred='The Flight Fare for the given date is:-  INR {}'.format(output))
     else:
         return render_template('index.html')
 if __name__=='__main__':
