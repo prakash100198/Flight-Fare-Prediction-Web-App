@@ -43,6 +43,3 @@ Enter valid values in all 6 input boxes and hit Predict.
 If everything goes well, you should  be able to see the predcited flight fare vaule on the HTML page like this:- 
   
 ![](images/HomePage3.png)  
-
-
-
