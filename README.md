@@ -29,7 +29,7 @@ By default, flask will run on port 5000.
   ![proj2_flowchart](https://user-images.githubusercontent.com/54064843/136836342-6b4bb5a5-7b97-40af-aa34-f646b1800a37.jpg)
 
   
-You should be able to view the homepage as below :  
+Homepage View:-   
    
 ![Screenshot (1947)](https://user-images.githubusercontent.com/54064843/136835220-86a8f698-6ce1-4fd7-a4ed-2b5d0601d29a.png)
 ![Screenshot (1945)](https://user-images.githubusercontent.com/54064843/136835236-bed14ecc-0227-425d-9036-6d46846e1f5c.png)
