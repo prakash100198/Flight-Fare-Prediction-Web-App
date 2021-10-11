@@ -24,6 +24,11 @@ By default, flask will run on port 5000.
 
 3. Navigate to URL http://127.0.0.1:8000/ (This local server will be assigned after you run the unicorn command)
 
+### FlowChart Diagram  
+  
+  ![proj2_flowchart](https://user-images.githubusercontent.com/54064843/136836342-6b4bb5a5-7b97-40af-aa34-f646b1800a37.jpg)
+
+  
 You should be able to view the homepage as below :  
    
 ![Screenshot (1947)](https://user-images.githubusercontent.com/54064843/136835220-86a8f698-6ce1-4fd7-a4ed-2b5d0601d29a.png)
@@ -39,4 +44,6 @@ Enter valid values in all 6 input boxes and hit Predict.
 If everything goes well, you should  be able to see the predcited flight fare vaule like this:- 
   
 ![Screenshot (1946)](https://user-images.githubusercontent.com/54064843/136835304-d655b4c0-38e0-444f-b7c4-8e8f70c7bf17.png)
+
+
 
