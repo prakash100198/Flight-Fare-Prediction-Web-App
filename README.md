@@ -1,12 +1,6 @@
 # Flight-Fare-Prediction-Web-App  
   
 Link for the Web-App:-  https://mlflightfare-prediction.herokuapp.com/  
-  
-## ML-Model-Flask-Deployment
-This is a project to elaborate how Machine Learn Models are made and deployed on production using Flask API
-
-### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
 
 ### Project Structure
 This project has four major parts :
@@ -15,7 +9,7 @@ This project has four major parts :
 3. templates - This folder contains the HTML template to allow user to enter flight detail and displays the predicted flight fare.
 4. static - This folder contains the .css file for the html file index.html to use and render a good looking web-app.
 
-### Running the project
+### Guide to run the project locally
 1. Ensure that you are in the project home directory. Create the machine learning model by running below command -
 ```
 python model.py
@@ -31,15 +25,18 @@ By default, flask will run on port 5000.
 3. Navigate to URL http://127.0.0.1:8000/ (This local server will be assigned after you run the unicorn command)
 
 You should be able to view the homepage as below :  
-  
-![](images/HomePage.png)  
-![](images/HomePage2.png)   
+   
+![Screenshot (1947)](https://user-images.githubusercontent.com/54064843/136835220-86a8f698-6ce1-4fd7-a4ed-2b5d0601d29a.png)
+![Screenshot (1945)](https://user-images.githubusercontent.com/54064843/136835236-bed14ecc-0227-425d-9036-6d46846e1f5c.png)
 
 
-Let me inform you that by clicking on the Source and Destination cities available ,you will land on the wiki page of that city and by clicking on the airline names(e.g Vistara) under the Airline Available tag these links will direct you to their respective official site  where you can further book tickets. The Github link under Connect tag brings you here:)  
+By clicking on the Source and Destination cities available ,you will land on the wiki page of that city and by clicking on the airline names(e.g Vistara) under the Airline Available tag these links will direct you to their respective official site  where you can further book tickets. The Github link under Connect tag brings you here:)  
   
 Enter valid values in all 6 input boxes and hit Predict.
+![Screenshot (1944)](https://user-images.githubusercontent.com/54064843/136835261-15ac2a8f-b32d-4f17-a836-269cfa911cfc.png)
 
-If everything goes well, you should  be able to see the predcited flight fare vaule on the HTML page like this:- 
+
+If everything goes well, you should  be able to see the predcited flight fare vaule like this:- 
   
-![](images/HomePage3.png)  
+![Screenshot (1946)](https://user-images.githubusercontent.com/54064843/136835304-d655b4c0-38e0-444f-b7c4-8e8f70c7bf17.png)
+
